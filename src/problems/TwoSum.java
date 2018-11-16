@@ -5,12 +5,11 @@ import java.util.Arrays;
 public class TwoSum {
 
     public static void main(String[] args) {
-
         int[] nums = new int[]{2, 7, 11, 15};
         int target = 9;
         int[] result = twoSum(nums, target);
-        System.out.println(Arrays.toString(result));
 
+        System.out.println(Arrays.toString(result));
     }
 
     public static int[] twoSum(int[] nums, int target) {
@@ -21,6 +20,7 @@ public class TwoSum {
                 }
             }
         }
+
         throw new IllegalArgumentException("No result");
     }
 

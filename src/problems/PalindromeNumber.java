@@ -17,6 +17,7 @@ public class PalindromeNumber {
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
+
         return true;
     }
 

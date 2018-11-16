@@ -19,7 +19,6 @@ public class AddTwoNumbers {
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
         ListNode node = new ListNode(Integer.MIN_VALUE);
         ListNode first = l1;
         ListNode second = l2;
@@ -45,6 +44,7 @@ public class AddTwoNumbers {
         if (ascent > 0) {
             current.next = new ListNode(ascent);
         }
+        
         return node.next;
     }
 

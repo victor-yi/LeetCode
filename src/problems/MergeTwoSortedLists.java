@@ -22,7 +22,6 @@ public class MergeTwoSortedLists {
     }
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-
         if (l1 != null && l2 == null) {
             return l1;
         } else if (l1 == null && l2 != null) {
