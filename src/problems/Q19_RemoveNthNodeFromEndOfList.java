@@ -3,7 +3,7 @@ package problems;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveNthNodeFromEndOfList {
+public class Q19_RemoveNthNodeFromEndOfList {
 
     public static void main(String[] args) {
         ListNode node = new ListNode(2);

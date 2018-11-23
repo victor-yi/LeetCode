@@ -1,6 +1,6 @@
 package problems;
 
-public class IntegerToRoman {
+public class Q12_IntegerToRoman {
 
     public static void main(String[] args) {
         System.out.println(intToRoman1(1994));

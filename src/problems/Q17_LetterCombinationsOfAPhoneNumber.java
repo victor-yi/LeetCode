@@ -3,7 +3,7 @@ package problems;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LetterCombinationsOfAPhoneNumber {
+public class Q17_LetterCombinationsOfAPhoneNumber {
 
     public static char[][] chars;
 

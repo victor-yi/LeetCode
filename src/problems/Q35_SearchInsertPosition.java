@@ -1,6 +1,6 @@
 package problems;
 
-public class SearchInsertPosition {
+public class Q35_SearchInsertPosition {
 
     public static void main(String[] args) {
         int[] array = new int[]{1,3,5,6};

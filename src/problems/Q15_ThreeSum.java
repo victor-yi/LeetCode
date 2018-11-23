@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ThreeSum {
+public class Q15_ThreeSum {
 
     public static void main(String[] args) {
         int[] array = new int[]{-1, 0, 1, 2, -1, -4};

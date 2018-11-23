@@ -1,6 +1,6 @@
 package problems;
 
-public class ReverseInteger {
+public class Q7_ReverseInteger {
 
     public static void main(String[] args) {
         System.out.println(reverse(Integer.MAX_VALUE));

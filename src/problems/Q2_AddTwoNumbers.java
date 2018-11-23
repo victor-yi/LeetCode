@@ -1,6 +1,6 @@
 package problems;
 
-public class AddTwoNumbers {
+public class Q2_AddTwoNumbers {
 
     public static void main(String[] args) {
         ListNode node = new ListNode(2);

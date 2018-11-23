@@ -1,6 +1,6 @@
 package problems;
 
-public class RemoveElement {
+public class Q27_RemoveElement {
 
     public static void main(String[] args) {
         int[] array = new int[]{0, 1, 2, 2, 3, 0, 4, 2};

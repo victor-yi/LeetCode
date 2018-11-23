@@ -1,6 +1,6 @@
 package problems;
 
-public class MergeTwoSortedLists {
+public class Q21_MergeTwoSortedLists {
 
     public static void main(String[] args) {
         ListNode node = new ListNode(1);

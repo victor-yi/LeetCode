@@ -3,7 +3,7 @@ package problems;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class ValidParentheses {
+public class Q20_ValidParentheses {
 
     public static void main(String[] args) {
         String str = "{{[]()}}";

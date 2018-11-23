@@ -1,6 +1,6 @@
 package problems;
 
-public class ImplementStrStr {
+public class Q28_ImplementStrStr {
 
     public static void main(String[] args) {
         System.out.println(strStr("ABCDE", "BC"));

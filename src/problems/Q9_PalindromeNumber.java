@@ -1,6 +1,6 @@
 package problems;
 
-public class PalindromeNumber {
+public class Q9_PalindromeNumber {
 
     public static void main(String[] args) {
         System.out.println(isPalindrome(12321));
