@@ -1,3 +1,5 @@
+package problems;
+
 public class Q38_CountAndSay {
     public static void main(String[] args) {
         System.out.println(countAndSay(7));
