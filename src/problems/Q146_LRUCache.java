@@ -11,7 +11,7 @@ public class Q146_LRUCache {
     private Map<Integer, Integer> cache;
     private Queue<Integer> accessOrder;
 
-    public LRUCache(int capacity) {
+    public Q146_LRUCache(int capacity) {
         this.capacity = capacity;
         this.cache = new HashMap<>();
         this.accessOrder = new LinkedList<>();
