@@ -11,7 +11,7 @@ public class Q38_CountAndSay {
         if (n == 1) {
             return tmp;
         }
-        
+
         for (int i = 1; i < n; i++) {
             tmp = generateNextString(tmp);
         }

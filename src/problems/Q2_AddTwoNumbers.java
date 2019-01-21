@@ -44,7 +44,7 @@ public class Q2_AddTwoNumbers {
         if (ascent > 0) {
             current.next = new ListNode(ascent);
         }
-        
+
         return node.next;
     }
 
@@ -61,7 +61,10 @@ public class Q2_AddTwoNumbers {
     static class ListNode {
         int val;
         ListNode next;
-        ListNode(int x) { val = x; }
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 
 }

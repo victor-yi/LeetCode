@@ -1,14 +1,14 @@
 package problems;
 
+import java.util.Arrays;
+
 public class Q66_PlusOne {
 
     public static void main(String[] args) {
         int[] a1 = new int[]{9, 9};
         int[] a2 = new int[]{1, 2, 3};
         int[] result = plusOne(a1);
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }
+        System.out.println(Arrays.toString(result));
     }
 
     public static int[] plusOne(int[] digits) {

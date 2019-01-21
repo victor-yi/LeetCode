@@ -32,5 +32,5 @@ public class Q16_ThreeSumClosest {
         }
         return delta + target;
     }
-    
+
 }

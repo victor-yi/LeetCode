@@ -8,7 +8,7 @@ public class Q17_LetterCombinationsOfAPhoneNumber {
     public static char[][] chars;
 
     static {
-        chars = new char[][] {
+        chars = new char[][]{
                 {'a', 'b', 'c'},
                 {'d', 'e', 'f'},
                 {'g', 'h', 'i'},

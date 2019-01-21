@@ -3,7 +3,7 @@ package problems;
 public class Q121_BestTimeToBuyAndSellStock {
 
     public static void main(String[] args) {
-        int[] array = new int[]{7,1,5,3,6,4};
+        int[] array = new int[]{7, 1, 5, 3, 6, 4};
         System.out.println(maxProfit(array));
     }
 
@@ -17,7 +17,7 @@ public class Q121_BestTimeToBuyAndSellStock {
                 maxProfit = prices[i] - minPrice;
             }
         }
-        
+
         return maxProfit;
     }
 

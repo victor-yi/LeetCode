@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Q14_LongestCommonPrefix {
 
     public static void main(String[] args) {
-        String[] strs = new String[]{"flower","flow","flight"};
-        String[] strs1 = new String[]{"dog","racecar","car"};
+        String[] strs = new String[]{"flower", "flow", "flight"};
+        String[] strs1 = new String[]{"dog", "racecar", "car"};
 
         System.out.println(longestCommonPrefix(strs1));
     }

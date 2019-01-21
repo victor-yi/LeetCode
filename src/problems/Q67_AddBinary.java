@@ -41,7 +41,7 @@ public class Q67_AddBinary {
         if (sum > 2) {
             carry = 1;
             sb.append(1);
-        } else if (sum == 2){
+        } else if (sum == 2) {
             carry = 1;
             sb.append(0);
         } else {

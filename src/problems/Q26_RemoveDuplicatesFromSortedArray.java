@@ -1,15 +1,14 @@
 package problems;
 
+import java.util.Arrays;
+
 public class Q26_RemoveDuplicatesFromSortedArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int count = removeDuplicates(array);
         System.out.println(count);
-        for (int i = 0; i < count; i++) {
-            System.out.println(array[i]);
-        }
-
+        System.out.println(Arrays.toString(array));
     }
 
     public static int removeDuplicates(int[] nums) {

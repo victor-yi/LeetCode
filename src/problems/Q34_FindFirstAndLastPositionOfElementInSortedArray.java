@@ -1,13 +1,13 @@
 package problems;
 
+import java.util.Arrays;
+
 public class Q34_FindFirstAndLastPositionOfElementInSortedArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{5, 7, 7, 8, 8, 10};
         array = searchRange(array, 8);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
+        System.out.println(Arrays.toString(array));
     }
 
     public static int[] searchRange(int[] nums, int target) {
