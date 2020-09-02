@@ -1,6 +1,17 @@
-package problems;/**
- * 
- * @author Victor
- * @since 2020/9/2
- */public class Q344_ReverseString {
+package problems;
+
+public class Q344_ReverseString {
+
+    public void reverseString(char[] s) {
+        int start = 0;
+        int end = s.length - 1;
+        while (start < end) {
+            char tmp = s[start];
+            s[start] = s[end];
+            s[end] = tmp;
+            start++;
+            end--;
+        }
+    }
+
 }

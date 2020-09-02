@@ -1,6 +1,17 @@
-package problems;/**
- * 
- * @author Victor
- * @since 2020/9/2
- */public class Q283_MoveZeroes {
+package problems;
+
+public class Q283_MoveZeroes {
+
+    public void moveZeroes(int[] nums) {
+        int nonZeroIndex = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[nonZeroIndex++] = nums[i];
+            }
+        }
+        for (int i = nonZeroIndex; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+    }
+
 }
