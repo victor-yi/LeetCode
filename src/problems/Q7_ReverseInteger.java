@@ -2,11 +2,7 @@ package problems;
 
 public class Q7_ReverseInteger {
 
-    public static void main(String[] args) {
-        System.out.println(reverse(Integer.MAX_VALUE));
-    }
-
-    public static int reverse(int x) {
+    public int reverse(int x) {
         long res = 0;
         for (; x != 0; x /= 10) {
             res = res * 10 + x % 10;

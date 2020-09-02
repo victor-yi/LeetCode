@@ -1,17 +1,8 @@
 package problems;
 
-import java.util.Arrays;
-
 public class Q66_PlusOne {
 
-    public static void main(String[] args) {
-        int[] a1 = new int[]{9, 9};
-        int[] a2 = new int[]{1, 2, 3};
-        int[] result = plusOne(a1);
-        System.out.println(Arrays.toString(result));
-    }
-
-    public static int[] plusOne(int[] digits) {
+    public int[] plusOne(int[] digits) {
         boolean ascend = false;
         for (int i = digits.length - 1; i >= 0; i--) {
             if (digits[i] < 9) {
