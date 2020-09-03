@@ -1,54 +1,22 @@
 package problems;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Q19_RemoveNthNodeFromEndOfList {
 
-    public static void main(String[] args) {
-        ListNode node = new ListNode(2);
-        ListNode secondNode = new ListNode(4);
-        ListNode thirdNode = new ListNode(3);
-        secondNode.next = thirdNode;
-        node.next = secondNode;
-
-        printListNode(removeNthFromEnd(node, 2));
-
-    }
-
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
-        if (n == 0) {
-            return head;
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode firstPointer = dummy;
+        ListNode secondPointer = dummy;
+        for (int i = 0; i <= n; i++) {
+            firstPointer = firstPointer.next;
         }
-
-        List<ListNode> list = new ArrayList<>();
-
-        while (head != null) {
-            list.add(head);
-            head = head.next;
+        while (firstPointer != null) {
+            firstPointer = firstPointer.next;
+            secondPointer = secondPointer.next;
         }
+        secondPointer.next = secondPointer.next.next;
 
-        if (list.size() == n) {
-            return list.get(0).next;
-        } else {
-            if (n == 1) {
-                list.get(list.size() - n - 1).next = null;
-            } else {
-                list.get(list.size() - n - 1).next = list.get(list.size() - n + 1);
-            }
-        }
-
-        return list.get(0);
-    }
-
-    public static void printListNode(ListNode node) {
-        StringBuilder sb = new StringBuilder();
-        while (node != null) {
-            sb.append(node.val);
-            sb.append(",");
-            node = node.next;
-        }
-        System.out.println(sb.toString());
+        return dummy.next;
     }
 
     static class ListNode {

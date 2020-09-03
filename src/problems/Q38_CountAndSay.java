@@ -1,11 +1,8 @@
 package problems;
 
 public class Q38_CountAndSay {
-    public static void main(String[] args) {
-        System.out.println(countAndSay(7));
-    }
 
-    public static String countAndSay(int n) {
+    public String countAndSay(int n) {
         String tmp = "1";
 
         if (n == 1) {
@@ -18,28 +15,25 @@ public class Q38_CountAndSay {
         return tmp;
     }
 
-    public static String generateNextString(String value) {
-        StringBuilder str = new StringBuilder(value);
-        StringBuilder sb = new StringBuilder();
+    public String generateNextString(String value) {
+        StringBuilder str = new StringBuilder();
         int counter = 0;
-        char c = str.charAt(0);
+        char c = value.charAt(0);
 
-        while (str.length() != 0) {
-            if (c == str.charAt(0)) {
+        for (int i = 0; i < value.length(); i++) {
+            if (c == value.charAt(i)) {
                 counter++;
             } else {
-                sb.append(counter);
-                sb.append(c);
-                c = str.charAt(0);
+                str.append(counter);
+                str.append(c);
                 counter = 1;
+                c = value.charAt(i);
             }
-            str.deleteCharAt(0);
         }
 
-        sb.append(counter);
-        sb.append(c);
-
-        return sb.toString();
+        str.append(counter);
+        str.append(c);
+        return str.toString();
     }
 
 }
