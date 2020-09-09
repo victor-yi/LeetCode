@@ -1,18 +1,13 @@
 package problems;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class Q20_ValidParentheses {
 
-    public static void main(String[] args) {
-        String str = "{{[]()}}";
-//        String str = "{{[](})}";
-        System.out.println(isValid(str));
-    }
-
-    public static boolean isValid(String s) {
-        HashMap<Character, Character> mapping = new HashMap<>();
+    public boolean isValid(String s) {
+        Map<Character, Character> mapping = new HashMap<>();
         mapping.put(')', '(');
         mapping.put('}', '{');
         mapping.put(']', '[');
