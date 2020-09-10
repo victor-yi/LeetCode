@@ -5,12 +5,7 @@ import java.util.Map;
 
 public class Q13_RomanToInteger {
 
-    public static void main(String[] args) {
-        String input = "MCMXCIV";
-        System.out.println(romanToInt(input));
-    }
-
-    public static int romanToInt(String s) {
+    public int romanToInt(String s) {
         Map<Character, Integer> definition = new HashMap<>();
         definition.put('I', 1);
         definition.put('V', 5);
